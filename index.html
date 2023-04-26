@@ -4,25 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1, minimum-scale=1">
     <title>Document</title>
+    <script type="text/javascript">
+        (function () {
+            document.addEventListener('DOMContentLoaded', () => {
+                const html = document.querySelector('html')
+                let fontSize = window.innerWidth / 10
+                fontSize = fontSize > 50 ? 50 : fontSize
+                html.style.fontSize = fontSize + 'px'
+            })
+        })();
+    </script>
     <style>
         * {
             margin: 0;
             padding: 0;
             border: 0;
             vertical-align: baseline;
-            font-size: 1rem;
             list-style: none;
+            font-size: 0.5rem;
 
         }
 
         .container {
-            padding: 1rem 0.5rem;
+            height: 97vh;
+            background: url('https://qianp.com/uploads/images/kind/20230414/20230414154213_99101.jpg') no-repeat;
+            background-size: cover;
+            padding: 0.3rem 0.2rem;
+        }
+
+        .center-box {
+            background-color: rgb(204, 204, 204, 0.8);
+            border-radius: 0.15rem;
+            padding: 0.3rem 0.2rem;
+            height: 95vh;
+            overflow-y: auto;
         }
 
         .h1-title {
-            margin-bottom: 1rem;
+            margin-bottom: 0.3rem;
             text-align: center;
         }
 
@@ -37,6 +58,15 @@
             display: flex;
             align-items: center;
             width: 50%;
+            margin-bottom: 0.2rem;
+        }
+
+        .box p {
+            font-weight: bold;
+        }
+
+        .box span {
+            font-size: 0.4rem;
         }
     </style>
 </head>
@@ -44,10 +74,71 @@
 <body>
 
     <div class="container">
-        <ul id="main" class="main uls"></ul>
-        <span id="zanshiID">展示</span>
+        <div class="center-box">
+            <h1 class="h1-title">单词本</h1>
+            <ul id="main" class="main uls"></ul>
+        </div>
     </div>
     <script>
+        const songs = [
+            { name: "一上", text: '' },
+            { name: "", text: '' },
+            { name: "black", text: '(adj.)黑色的' },
+            { name: "two", text: '(num.)两个；二' },
+            { name: "pear", text: '(n.)梨子，梨树' },
+            { name: "what", text: '(pron.)什么' },
+            { name: "a", text: '(art.)一/个' },
+            { name: "face", text: '(n.)脸' },
+            { name: "one", text: '(num.)一，一个' },
+            { name: "book", text: '书' },
+            { name: "ruler", text: '尺子' },
+            { name: "pencil", text: '铅笔' },
+            { name: "schoolbag", text: '书包' },
+            { name: "teacher", text: '教师' },
+            { name: "I", text: '我' },
+            { name: "have", text: '有' },
+            { name: "ear", text: '耳朵' },
+            { name: "eye", text: '眼睛' },
+            { name: "nose", text: '鼻' },
+            { name: "mouth", text: '嘴' },
+            { name: "this", text: '这' },
+            { name: "is", text: '是' },
+            { name: "my", text: '我的' },
+            { name: "dog", text: '狗' },
+            { name: "bird", text: '鸟' },
+            { name: "tiger", text: '虎' },
+            { name: "monkey", text: '猴子' },
+            { name: "cat", text: '猫' },
+            { name: "it", text: '它' },
+            { name: "three", text: '三' },
+            { name: "four", text: '四' },
+            { name: "five", text: '五' },
+            { name: "six", text: '六' },
+            { name: "seven", text: '七' },
+            { name: "eight", text: '八' },
+            { name: "nine", text: '九' },
+            { name: "ten", text: '十' },
+            { name: "how", text: '怎样' },
+            { name: "many", text: '许多的' },
+            { name: "are", text: '是' },
+            { name: "there", text: '那里' },
+            { name: "yellow", text: '黄的' },
+            { name: "blue", text: '蓝色' },
+            { name: "red", text: '红色' },
+            { name: "green", text: '绿色' },
+            { name: "color", text: '颜色' },
+            { name: "apple", text: ' 苹果' },
+            { name: "banana", text: ' 香蕉' },
+            { name: "orange", text: ' 橙色' },
+            { name: "do", text: ' 做' },
+            { name: "you", text: ' 你' },
+            { name: "like", text: '喜欢' },
+            { name: "yes", text: ' 对' },
+            { name: "no", text: ' 不' },
+
+
+        ];
+
         function $(selector) {
             return document.querySelector(selector);
         }
@@ -57,34 +148,19 @@
         HTMLElement.prototype.hasClass = function (className) {
             return new RegExp(" " + className + " ").test(' ' + this.className + ' ');
         }
-        const songs = [
-            {
-                name: "updating",
-                text: '跟新'
-            },
-            {
-                name: "cards",
-                text: '卡片'
-            },
-        ];
         const box = $("#box");
         const main = $("#main");
-        const linkeId=$('#zanshiID')
-
-       
         songs.forEach(createPopBox); //循环出数据列表 然后进行创建渲染
         function createPopBox(item) {  //数据渲染页面
             const boxItem = document.createElement('li');
             boxItem.classList.add('box');
-            boxItem.innerHTML = `<p>${item.name}</p>—<span> ${item.text} </span>`;
+            boxItem.innerHTML = `<p>${item.name}</p><span> ： ${item.text} </span>`;
             main.appendChild(boxItem);
         }
-
         // 获取 点击每一个文本的dom
         const children = main.querySelectorAll('.box');
-        linkeId.innerHTML='改变了'
         let message = new SpeechSynthesisUtterance(); //获取阅读信息对象实例
-        message.lang ="zh-CN"; //设置语言
+        message.lang = "zh-CN"; //设置语言
         children.forEach(item => {
             item.addEventListener('click', () => { //给每一个文本添加点击事件
                 children.forEach((child) => {
