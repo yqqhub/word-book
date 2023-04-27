@@ -81,164 +81,39 @@
     </div>
     <script>
 
-        
-        const firstGradeS = [
-            { name: "一上❤️❤️❤️", text: '' },
-            { name: "❤️❤️❤️", text: '❤️❤️❤️' },
-            { name: "black", text: '(adj.)黑色的' },
-            { name: "two", text: '(num.)两个；二' },
-            { name: "pear", text: '(n.)梨子，梨树' },
-            { name: "what", text: '(pron.)什么' },
-            { name: "a", text: '(art.)一/个' },
-            { name: "face", text: '(n.)脸' },
-            { name: "one", text: '(num.)一，一个' },
-            { name: "book", text: '书' },
-            { name: "ruler", text: '尺子' },
-            { name: "pencil", text: '铅笔' },
-            { name: "schoolbag", text: '书包' },
-            { name: "teacher", text: '教师' },
-            { name: "I", text: '我' },
-            { name: "have", text: '有' },
-            { name: "ear", text: '耳朵' },
-            { name: "eye", text: '眼睛' },
-            { name: "nose", text: '鼻' },
-            { name: "mouth", text: '嘴' },
-            { name: "this", text: '这' },
-            { name: "is", text: '是' },
-            { name: "my", text: '我的' },
-            { name: "dog", text: '狗' },
-            { name: "bird", text: '鸟' },
-            { name: "tiger", text: '虎' },
-            { name: "monkey", text: '猴子' },
-            { name: "cat", text: '猫' },
-            { name: "it", text: '它' },
-            { name: "three", text: '三' },
-            { name: "four", text: '四' },
-            { name: "five", text: '五' },
-            { name: "six", text: '六' },
-            { name: "seven", text: '七' },
-            { name: "eight", text: '八' },
-            { name: "nine", text: '九' },
-            { name: "ten", text: '十' },
-            { name: "how", text: '怎样' },
-            { name: "many", text: '许多的' },
-            { name: "are", text: '是' },
-            { name: "there", text: '那里' },
-            { name: "yellow", text: '黄的' },
-            { name: "blue", text: '蓝色' },
-            { name: "red", text: '红色' },
-            { name: "green", text: '绿色' },
-            { name: "color", text: '颜色' },
-            { name: "apple", text: '苹果' },
-            { name: "banana", text: '香蕉' },
-            { name: "orange", text: '橙色' },
-            { name: "do", text: '做' },
-            { name: "you", text: '你' },
-            { name: "like", text: '喜欢' },
-            { name: "yes", text: '对' },
-            { name: "no", text: '不' },
-        ]
-        const firstGradeX = [
-            { name: "一下💚💚💚", text: '' },
-            { name: "💚💚💚", text: '💚💚💚' },
-            { name: "chair", text: '椅子' },
-            { name: "desk", text: '书桌' },
-            { name: "blackboard", text: '黑板' },
-            { name: "on", text: '在…上' },
-            { name: "under", text: '在下面' },
-            { name: "where", text: '哪里' },
-            { name: "the", text: '这个' },
-            { name: "light", text: '光' },
-            { name: "bed", text: '床' },
-            { name: "door", text: '门' },
-            { name: "box", text: '盒' },
-            { name: "near", text: '近的' },
-            { name: "behind", text: '在…的后面' },
-            { name: "plane", text: '飞机' },
-            { name: "ball", text: '球' },
-            { name: "doll", text: '洋娃娃' },
-            { name: "train", text: '火车' },
-            { name: "car", text: '汽车' },
-            { name: "bear", text: '熊' },
-            { name: "can", text: '可以' },
-            { name: "sure", text: '当然' },
-            { name: "sorry", text: '很抱歉' },
-            { name: "rice", text: '大米' },
-            { name: "noodles", text: '面条' },
-            { name: "vegetable", text: '蔬菜' },
-            { name: "fish", text: '鱼' },
-            { name: "chicken", text: '鸡' },
-            { name: "egg", text: '鸡蛋' },
-            { name: "hungry", text: '感到饿的' },
-            { name: "want", text: '希望' },
-            { name: "and", text: '和' },
-            { name: "juice", text: '果汁' },
-            { name: "tea", text: '茶叶' },
-            { name: "milk", text: '牛奶' },
-            { name: "water", text: '水' },
-            { name: "thirsty", text: '渴的' },
-            { name: "thanks", text: '谢谢' },
-            { name: "shirt", text: '衬衫' },
-        ]
-        const secondGradeS = [
-            { name: "二上💚💚💚", text: '' },
-            { name: "💚💚💚", text: '💚💚💚' },
-            { name: 'father', text: '父亲' },
-            { name: 'mother', text: '母亲' },
-            { name: 'brother', text: '兄弟' },
-            { name: 'sister', text: '姐妹' },
-            { name: 'who', text: '谁' },
-            { name: 'she', text: '她' },
-            { name: 'classmate', text: '同学' },
-            { name: 'friend', text: '朋友' },
-            { name: 'grandmother', text: '祖母' },
-            { name: 'man', text: '成年男子' },
-            { name: 'look', text: '看' },
-            { name: 'his', text: '他的' },
-            { name: 'name', text: '名称' },
-            { name: 'or', text: '或' },
-            { name: 'grandfather', text: '祖父' },
-            { name: 'big', text: '大的' },
-            { name: 'tall', text: '高的' },
-            { name: 'pretty', text: '漂亮的' },
-            { name: 'thin', text: '薄的' },
-            { name: 'girl', text: '女孩' },
-            { name: 'short', text: '短的' },
-            { name: 'handsome', text: '英俊的' },
-            { name: 'new', text: '新' },
-            { name: 'does', text: '做' },
-            { name: 'bookshop', text: '书店' },
-            { name: 'z00', text: 'z00' },
-            { name: 'school', text: '学校' },
-            { name: 'supermarket', text: '超级市场' },
-            { name: 'park', text: '公园' },
-            { name: 'he', text: '他' },
-            { name: 'go', text: '去' },
-            { name: 'to', text: '到' },
-            { name: 'grass', text: '草' },
-            { name: 'tree', text: '树' },
-            { name: 'flower', text: '花' },
-            { name: 'boat', text: '船' },
-            { name: 'lake', text: '湖' },
-            { name: 'hill', text: '山丘' },
-            { name: 'hospital', text: '医院' },
-            { name: 'boy', text: '男孩' },
-            { name: 'woman', text: '成年女子' },
-            { name: 'Christmas', text: '圣诞节' },
-            { name: 'Father Christmas', text: '圣诞老人' },
-            { name: 'Christmas tree', text: '圣诞树' },
-            { name: 'card', text: '卡片' },
-            { name: 'present', text: '目前' },
-            { name: 'New Year', text: '新年' },
-            { name: 'merry', text: '愉快的' },
-            { name: 'too', text: '也' },
-            { name: 'here', text: '在这里' },
-            { name: 'for', text: '对于' },
-            { name: 'thank', text: '感谢' },
-            { name: 'her', text: '她' },
-            { name: 'happy', text: '快乐的' }
-        ]
-        const songs = [...firstGradeS,...firstGradeX,...secondGradeS   ];
+        // 一年级
+        const firstGradeS = [{ name: "一上❤️❤️❤️", text: '' }, { name: "❤️❤️❤️", text: '❤️❤️❤️' }, { name: "black", text: '(adj.)黑色的' }, { name: "two", text: '(num.)两个；二' }, { name: "pear", text: '(n.)梨子，梨树' }, { name: "what", text: '(pron.)什么' }, { name: "a", text: '(art.)一/个' }, { name: "face", text: '(n.)脸' }, { name: "one", text: '(num.)一，一个' }, { name: "book", text: '书' }, { name: "ruler", text: '尺子' }, { name: "pencil", text: '铅笔' }, { name: "schoolbag", text: '书包' }, { name: "teacher", text: '教师' }, { name: "I", text: '我' }, { name: "have", text: '有' }, { name: "ear", text: '耳朵' }, { name: "eye", text: '眼睛' }, { name: "nose", text: '鼻' }, { name: "mouth", text: '嘴' }, { name: "this", text: '这' }, { name: "is", text: '是' }, { name: "my", text: '我的' }, { name: "dog", text: '狗' }, { name: "bird", text: '鸟' }, { name: "tiger", text: '虎' }, { name: "monkey", text: '猴子' }, { name: "cat", text: '猫' }, { name: "it", text: '它' }, { name: "three", text: '三' }, { name: "four", text: '四' }, { name: "five", text: '五' }, { name: "six", text: '六' }, { name: "seven", text: '七' }, { name: "eight", text: '八' }, { name: "nine", text: '九' }, { name: "ten", text: '十' }, { name: "how", text: '怎样' }, { name: "many", text: '许多的' }, { name: "are", text: '是' }, { name: "there", text: '那里' }, { name: "yellow", text: '黄的' }, { name: "blue", text: '蓝色' }, { name: "red", text: '红色' }, { name: "green", text: '绿色' }, { name: "color", text: '颜色' }, { name: "apple", text: '苹果' }, { name: "banana", text: '香蕉' }, { name: "orange", text: '橙色' }, { name: "do", text: '做' }, { name: "you", text: '你' }, { name: "like", text: '喜欢' }, { name: "yes", text: '对' }, { name: "no", text: '不' },]
+        const firstGradeX = [{ name: "一下💚💚💚", text: '' }, { name: "💚💚💚", text: '💚💚💚' }, { name: "chair", text: '椅子' }, { name: "desk", text: '书桌' }, { name: "blackboard", text: '黑板' }, { name: "on", text: '在…上' }, { name: "under", text: '在下面' }, { name: "where", text: '哪里' }, { name: "the", text: '这个' }, { name: "light", text: '光' }, { name: "bed", text: '床' }, { name: "door", text: '门' }, { name: "box", text: '盒' }, { name: "near", text: '近的' }, { name: "behind", text: '在…的后面' }, { name: "plane", text: '飞机' }, { name: "ball", text: '球' }, { name: "doll", text: '洋娃娃' }, { name: "train", text: '火车' }, { name: "car", text: '汽车' }, { name: "bear", text: '熊' }, { name: "can", text: '可以' }, { name: "sure", text: '当然' }, { name: "sorry", text: '很抱歉' }, { name: "rice", text: '大米' }, { name: "noodles", text: '面条' }, { name: "vegetable", text: '蔬菜' }, { name: "fish", text: '鱼' }, { name: "chicken", text: '鸡' }, { name: "egg", text: '鸡蛋' }, { name: "hungry", text: '感到饿的' }, { name: "want", text: '希望' }, { name: "and", text: '和' }, { name: "juice", text: '果汁' }, { name: "tea", text: '茶叶' }, { name: "milk", text: '牛奶' }, { name: "water", text: '水' }, { name: "thirsty", text: '渴的' }, { name: "thanks", text: '谢谢' }, { name: "shirt", text: '衬衫' },]
+        // 二年级
+        const secondGradeS = [{ name: "二上💛💛💛", text: '' }, { name: "💛💛💛", text: '💛💛💛' }, { name: 'father', text: '父亲' }, { name: 'mother', text: '母亲' }, { name: 'brother', text: '兄弟' }, { name: 'sister', text: '姐妹' }, { name: 'who', text: '谁' }, { name: 'she', text: '她' }, { name: 'classmate', text: '同学' }, { name: 'friend', text: '朋友' }, { name: 'grandmother', text: '祖母' }, { name: 'man', text: '成年男子' }, { name: 'look', text: '看' }, { name: 'his', text: '他的' }, { name: 'name', text: '名称' }, { name: 'or', text: '或' }, { name: 'grandfather', text: '祖父' }, { name: 'big', text: '大的' }, { name: 'tall', text: '高的' }, { name: 'pretty', text: '漂亮的' }, { name: 'thin', text: '薄的' }, { name: 'girl', text: '女孩' }, { name: 'short', text: '短的' }, { name: 'handsome', text: '英俊的' }, { name: 'new', text: '新' }, { name: 'does', text: '做' }, { name: 'bookshop', text: '书店' }, { name: 'z00', text: 'z00' }, { name: 'school', text: '学校' }, { name: 'supermarket', text: '超级市场' }, { name: 'park', text: '公园' }, { name: 'he', text: '他' }, { name: 'go', text: '去' }, { name: 'to', text: '到' }, { name: 'grass', text: '草' }, { name: 'tree', text: '树' }, { name: 'flower', text: '花' }, { name: 'boat', text: '船' }, { name: 'lake', text: '湖' }, { name: 'hill', text: '山丘' }, { name: 'hospital', text: '医院' }, { name: 'boy', text: '男孩' }, { name: 'woman', text: '成年女子' }, { name: 'Christmas', text: '圣诞节' }, { name: 'Father Christmas', text: '圣诞老人' }, { name: 'Christmas tree', text: '圣诞树' }, { name: 'card', text: '卡片' }, { name: 'present', text: '目前' }, { name: 'New Year', text: '新年' }, { name: 'merry', text: '愉快的' }, { name: 'too', text: '也' }, { name: 'here', text: '在这里' }, { name: 'for', text: '对于' }, { name: 'thank', text: '感谢' }, { name: 'her', text: '她' }, { name: 'happy', text: '快乐的' }]
+        const secondGradeX = [{ name: "二下💙💙💙", text: '' }, { name: "💙💙💙", text: '💙💙💙' }, { name: 'play football', text: '踢足球' }, { name: 'fly a kite', text: '放风筝' }, { name: 'ride a bike', text: '骑自行车' }, { name: 'make a model plane', text: '制作飞机模型' }, { name: 'swim', text: '游水' }, { name: 'make a snowman', text: '堆雪人' }, { name: "can't", text: '不能' }, { name: 'rainy', text: '阴雨的' }, { name: 'cloudy', text: '多云的' }, { name: 'snowy', text: '下雪的' }, { name: 'windy', text: '多风的' }, { name: 'sunny', text: '晴朗的' }, { name: 'umbrella', text: '雨伞' }, { name: 'weather', text: '天气' }, { name: 'wow', text: '哇！' }, { name: "let's", text: '让我们' }, { name: 'spring', text: '春天' }, { name: 'autumn', text: '秋天' }, { name: 'winter', text: '冬天' }, { name: 'hot', text: '热的' }, { name: 'warm', text: '温暖的' }, { name: 'summer', text: '夏天' }, { name: 'cool', text: '凉的' }, { name: 'cold', text: '寒冷的' }, { name: 'favourite', text: '最喜欢的' }, { name: 'season', text: '季' }, { name: 'eat breakfast', text: '吃早餐' }, { name: 'eleven', text: '十一' }, { name: 'twelve', text: '十二' }, { name: 'twenty', text: '二十' }, { name: 'thirty', text: '三十' }, { name: 'forty', text: '四十' }, { name: 'fifty', text: '五十' }, { name: 'fourteen', text: '十四' }, { name: 'fifteen', text: '十五' }, { name: 'time', text: '时间' }, { name: 'playtime', text: '游戏时间' }, { name: 'get up', text: '起床' }, { name: 'go to school', text: '上学' }, { name: 'eat lunch', text: '吃午饭' }, { name: 'go home', text: '回家吧' }, { name: 'go to bed', text: '去睡觉吧' }, { name: 'when', text: '什么时候' }, { name: 'every day', text: '每一天' }, { name: 'at', text: '在' }, { name: 'thirteen', text: '十三' }, { name: 'Sunday', text: '星期日' }, { name: 'Monday', text: '星期一' }, { name: 'Tuesday', text: '星期二' }, { name: 'Wednesday', text: '星期三' }, { name: 'Thursday', text: '星期四' }, { name: 'Friday', text: '星期五' }, { name: 'Saturday', text: '星期六' }, { name: 'today', text: '今天' }, { name: 'eat dinner', text: '吃晚饭' }]
+        // 三年级
+        const thirdGradeS = [{ name: " ", text: ' ' }, { name: "三上🖤🖤🖤", text: '' }, { name: "🖤🖤🖤", text: '🖤🖤🖤' }, { name: 'my', text: '我的' }, { name: 'your', text: '你的' }, { name: 'name', text: '名称' }, { name: 'new', text: '新' }, { name: 'year', text: '年' }, { name: 'old', text: '古老的' }, { name: 'how old', text: '多少岁' }, { name: 'class', text: '班' }, { name: 'grade', text: '等级' }, { name: 'dear', text: '亲爱的' }, { name: 'body', text: '身体' }, { name: 'head', text: '头' }, { name: 'hair', text: '头发' }, { name: 'arm', text: '臂' }, { name: 'hand', text: '手' }, { name: 'age', text: '年龄' }, { name: 'the matter', text: '这件事' }, { name: 'hurt', text: '伤害' }, { name: 'help', text: '帮助' }, { name: 'bad', text: '令人不快的' }, { name: 'bite', text: '咬' }, { name: 'tongue', text: '舌头' }, { name: 'kick', text: '踢' }, { name: 'leg', text: '腿' }, { name: 'afternoon', text: '下午' }, { name: 'summary', text: '总结' }, { name: 'face', text: '面对' }, { name: 'nose', text: '鼻' }, { name: 'mouth', text: '嘴' }, { name: 'ear', text: '耳朵' }, { name: 'bread', text: '面包' }, { name: 'cake', text: '糕饼' }, { name: 'fruit', text: '水果' }, { name: 'foot', text: '脚' }, { name: 'ice-cream', text: '冰淇淋' }, { name: 'potato', text: '马铃薯' }, { name: 'tomato', text: '番茄' }, { name: 'meat', text: '肉' }, { name: 'for', text: '对于' }, { name: 'shopping list', text: '购物清单' }, { name: 'cola', text: '可乐' }, { name: 'buy', text: '购买' }, { name: 'rice', text: '大米' }, { name: 'feet', text: '脚' }, { name: 'noodles', text: '面条' }, { name: 'vegetables', text: '蔬菜' }, { name: 'fish', text: '鱼' }, { name: 'chicken', text: '鸡' }, { name: 'egg', text: '鸡蛋' }, { name: 'duck', text: '鸭子' }, { name: 'rabbit', text: '兔子' }, { name: 'pet', text: '宠物' }, { name: 'snake', text: '蛇' }, { name: 'turtle', text: '乌龟' }, { name: 'small', text: '小的' }, { name: 'long', text: '长的' }, { name: 'look for', text: '寻找' }, { name: 'tail', text: '尾' }, { name: 'dance', text: '跳舞' }, { name: 'cat', text: '猫' }, { name: 'dog', text: '狗' }, { name: 'bird', text: '鸟' }, { name: 'monkey', text: '猴子' }, { name: 'tiger', text: '虎' }, { name: 'big', text: '大的' }, { name: 'short', text: '短的' }, { name: 'cap', text: '帽子' }, { name: 'coat', text: '外套' }, { name: 'shoes', text: '鞋' }, { name: 'sweater', text: '毛衣' }, { name: 'jacket', text: '夹克' }, { name: 'gloves', text: '手套' }, { name: 'trousers', text: '裤子' }, { name: 'should', text: '应该' }, { name: 'wear', text: '穿' }, { name: 'week', text: '周' }, { name: 'soon', text: '很快' }, { name: 'look forward to', text: '期待' }, { name: 'T-shirt', text: 'T恤' }, { name: 'shorts', text: '短裤' }, { name: 'socks', text: '袜子' }, { name: 'skirt', text: '短裙' }, { name: 'dress', text: '连衣裙' }, { name: 'shirt', text: '衬衫' }, { name: 'January', text: '一月' }, { name: 'February', text: '二月' }, { name: 'March', text: '前进' }, { name: 'April', text: '四月' }, { name: 'May', text: '也许' }, { name: 'June', text: '六月' }, { name: 'July', text: '七月' }, { name: 'August', text: '八月' }, { name: 'September', text: '九月' }, { name: 'October', text: '十月' }, { name: 'November', text: '十一月' }, { name: 'December', text: '十二月' }, { name: 'birthday', text: '生日' }, { name: 'first', text: '第一' }, { name: 'party', text: '聚会' }, { name: 'delicious', text: '美味的' }]
+        const thirdGradeX = [{ name: "三下💜💜💜", text: '' }, { name: "💜💜💜", text: '💜💜💜' }, { name: 'Chinese', text: '中国人' }, { name: 'English', text: '英语' }, { name: 'science', text: '科学' }, { name: 'PE', text: '体育课' }, { name: 'music', text: '音乐' }, { name: 'maths', text: '数学' }, { name: 'art', text: '艺术' }, { name: 'computer class', text: '计算机类' }, { name: 'we', text: '我们' }, { name: 'that', text: '那个' }, { name: 'classroom', text: '教室' }, { name: 'library', text: '图书馆' }, { name: 'toilet', text: '坐便器' }, { name: 'playground', text: '游戏场' }, { name: 'first', text: '第一' }, { name: 'second', text: '第二' }, { name: 'third', text: '第三' }, { name: 'floor', text: '地板' }, { name: 'room', text: '房间' }, { name: 'our', text: '我们的' }, { name: 'they', text: '他们' }, { name: 'chair', text: '椅子' }, { name: 'desk', text: '书桌' }, { name: 'blackboard', text: '黑板' }, { name: 'after school', text: '放学后' }, { name: 'draw pictures', text: '画画' }, { name: 'play chess', text: '下象棋' }, { name: 'dance', text: '跳舞' }, { name: 'sing songs', text: '唱歌' }, { name: 'read books', text: '读书' }, { name: 'really', text: '真正地' }, { name: 'tomorrow', text: '明天' }, { name: 'wake up', text: '醒醒' }, { name: 'be back', text: '回来' }, { name: 'play football', text: '踢足球' }, { name: 'fly a kite', text: '放风筝' }, { name: 'ride a bike', text: '骑自行车' }, { name: 'swim', text: '游水' }, { name: 'make a model plane', text: '制作飞机模型' }, { name: 'make a snowman', text: '堆雪人' }, { name: 'play sports', text: '运动' }, { name: 'family', text: '家庭' }, { name: 'uncle', text: '叔叔' }, { name: 'aunt', text: '阿姨' }, { name: 'cousin', text: '表妹' }, { name: 'handsome', text: '英俊的' }, { name: 'beautiful', text: '美丽的' }, { name: 'lost', text: '迷路的' }, { name: 'water bottle', text: '水壶' }, { name: 'know', text: '知道' }, { name: 'OK', text: '好啊' }, { name: 'much', text: '很' }, { name: 'welcome', text: '欢迎' }, { name: 'grandfather', text: '祖父' }, { name: 'grandmother', text: '祖母' }, { name: 'mother', text: '母亲' }, { name: 'brother', text: '兄弟' }, { name: 'sister', text: '姐妹' }, { name: 'bedroom', text: '卧室' }, { name: 'cooking dinner', text: '烹饪晚餐' }, { name: 'walking the dog', text: '遛狗' }, { name: 'watering the plants', text: '给植物浇水' }, { name: 'cleaning the room', text: '打扫房间' }, { name: 'listening to music', text: '听音乐' }, { name: 'watching TV', text: '看电视' }, { name: 'feeding the fish', text: '喂鱼' }, { name: 'play with', text: '玩' }, { name: 'in one hour', text: '一小时内' }, { name: 'everyone', text: '每个人' }, { name: 'run', text: '跑' }, { name: 'father', text: '父亲' }, { name: 'home', text: '家' }, { name: 'bed', text: '床' }, { name: 'living room', text: '客厅' }, { name: 'study', text: '学习' }, { name: 'kitchen', text: '厨房' }, { name: 'for rent', text: '供出租' }, { name: 'sofa', text: '沙发' }, { name: 'light', text: '光' }, { name: 'door', text: '门' }, { name: 'box', text: '盒' }, { name: 'children', text: '儿童' }, { name: 'bathroom', text: '浴室' }, { name: 'dining room', text: '餐厅' }]
+        // 四年级
+        const fourthGradeS = [{ name: "四上💜💜💜", text: '' }, { name: "💜💜💜", text: '💜💜💜' }, { name: "running", text: "跑步" }, { name: "basketbal", text: "篮球运动员" }, { name: "roller skating", text: "轮滑" }, { name: "jumping rope", text: "跳绳" }, { name: "ping-pong", text: "乒乓球" }, { name: "what about", text: "那么...怎么样" }, { name: "interesting", text: "有趣的" }, { name: "often", text: "经常" }, { name: "be good at", text: "擅长" }, { name: "late", text: "晚的" }, { name: "swim", text: "游水" }, { name: "friena", text: "弗里纳" }, { name: "father", text: "父亲" }, { name: "get up", text: "起床" }, { name: "visit one's grandparents", text: "拜访祖父母" }, { name: "go to a drawing club", text: "去绘画俱乐部" }, { name: "climb a hill", text: "爬山" }, { name: "pick fruit", text: "采摘水果" }, { name: "go fishing", text: "去钓鱼" }, { name: "go to the cinema", text: "去看电影" }, { name: "on the weekend", text: "在周末" }, { name: "fun", text: "享乐" }, { name: "always", text: "总是" }, { name: "step", text: "步" }, { name: "paint", text: "油漆" }, { name: "evening", text: "傍晚" }, { name: "dirty", text: "肮脏的" }, { name: "their", text: "他们的" }, { name: "house", text: "房屋" }, { name: "poor", text: "贫穷的" }, { name: "hope", text: "希望" }, { name: "so", text: "所以" }, { name: "Saturday", text: "星期六" }, { name: "near", text: "近的" }, { name: "day", text: "白天" }, { name: "usually", text: "通常" }, { name: "by bus", text: "乘公共汽车" }, { name: "by boat", text: "乘船" }, { name: "by ship", text: "乘船" }, { name: "by car", text: "乘汽车" }, { name: "by taxi", text: "乘出租车" }, { name: "by bike", text: "骑自行车" }, { name: "on foot", text: "步行" }, { name: "by school bus", text: "乘校车" }, { name: "by subway", text: "乘地铁" }, { name: "by plane", text: "乘飞机" }, { name: "garden", text: "花园" }, { name: "meeting place", text: "会议地点" }, { name: "gate", text: "大门" }, { name: "transportation", text: "运输" }, { name: "film", text: "电影" }, { name: "earth", text: "世界" }, { name: "snow", text: "雪" }, { name: "theatre", text: "剧院" }, { name: "come", text: "来" }, { name: "enjoy", text: "享受" }, { name: "park", text: "公园" }, { name: "apple", text: "苹果" }, { name: "pen", text: "笔" }, { name: "knife", text: "刀" }, { name: "eraser", text: "橡皮擦" }, { name: "crayon", text: "蜡笔" }, { name: "scissors", text: "剪刀" }, { name: "glue stick", text: "胶水棒" }, { name: "paper", text: "纸张" }, { name: "use", text: "使用" }, { name: "please", text: "请" }, { name: "find", text: "发现" }, { name: "Information Centre", text: "咨询服务中心" }, { name: "Excuse me.", text: "打扰一下" }, { name: "phone", text: "电话" }, { name: "dad", text: "爸爸" }, { name: "hamburger", text: "汉堡包" }, { name: "ruler", text: "尺子" }, { name: "pencil", text: "铅笔" }, { name: "schoolbag", text: "书包" }, { name: "shop", text: "商店" }, { name: "climb on the window ledge", text: "爬上窗台" }, { name: "dangerous", text: "危险的" }, { name: "play with fire", text: "玩火" }, { name: "Be careful", text: "小心" }, { name: "run down the stairs", text: "跑下楼梯" }, { name: "sidewalk", text: "人行道" }, { name: "wait for", text: "等待" }, { name: "safe", text: "安全的" }, { name: "stop", text: "停止" }, { name: "street", text: "大街" }, { name: "safety rule", text: "安全规则" }, { name: "green", text: "绿色" }, { name: "red", text: "红色" }, { name: "play football", text: "踢足球" }, { name: "nurse", text: "护士" }, { name: "cook", text: "烹调" }, { name: "doctor", text: "医生" }, { name: "bus driver", text: "公共汽车司机" }, { name: "police officer", text: "警官" }, { name: "taxi driver", text: "出租车司机" }, { name: "farmer", text: "农民" }, { name: "worker", text: "工人" }, { name: "in the future", text: "未来" }, { name: "great", text: "太棒了" }, { name: "fob", text: "搪塞" }, { name: "sick", text: "生病的" }, { name: "people", text: "人" }, { name: "teach", text: "教" }, { name: "just", text: "只是" }, { name: "myself", text: "我自己" }, { name: "sound", text: "声音" }, { name: "Monday", text: "星期一" }, { name: "Tuesday", text: "星期二" }, { name: "Wednesday", text: "星期三" }, { name: "Thursday", text: "星期四" }, { name: "Friday", text: "星期五" }, { name: "teacher", text: "教师" }]
+        const fourthGradeX = [{ name: "四下💜💜💜", text: '' }, { name: "💜💜💜", text: '💜💜💜' }, { name: 'across from', text: '在…的对面' }, { name: 'next to', text: '旁边' }, { name: 'between', text: '之间' }, { name: 'restaurant', text: '餐馆' }, { name: 'post office', text: '邮局' }, { name: 'bank', text: '银行' }, { name: 'grocery', text: '杂货店' }, { name: 'turn left', text: '左转' }, { name: 'turn right', text: '右转' }, { name: 'go straight', text: '直走' }, { name: 'crossroads', text: '十字路口' }, { name: 'neighbourhood', text: '街区' }, { name: 'send', text: '邮寄' }, { name: 'get', text: '收到' }, { name: 'money', text: '钱' }, { name: 'get to', text: '到达' }, { name: 'before', text: '之前' }, { name: 'leave', text: '离开' }, { name: 'toy', text: '玩具' }, { name: 'hospital', text: '医院' }, { name: 'bookshop', text: '书店' }, { name: 'school', text: '学校' }, { name: 'supermarket', text: '超级市场' }, { name: 'ball', text: '球' }, { name: 'street', text: '大街' }, { name: 'sports centre', text: '体育中心' }, { name: 'square', text: '广场' }, { name: 'buy toys', text: '买玩具' }, { name: 'see a film', text: '看电影' }, { name: 'hotel', text: '酒店' }, { name: 'go boating', text: '去划船' }, { name: 'busy', text: '忙碌的' }, { name: 'station', text: '火车站' }, { name: 'place', text: '位置' }, { name: 'thing', text: '事情' }, { name: 'stay', text: '停留' }, { name: 'star', text: '明星' }, { name: 'king', text: '君主' }, { name: 'central', text: '中心的' }, { name: 'take photos', text: '照相' }, { name: 'museum', text: '博物馆' }, { name: 'dream', text: '梦' }, { name: 'sea', text: '海' }, { name: 'ski', text: '滑雪' }, { name: 'eat seafood', text: '吃海鲜' }, { name: 'visit the Mogao Caves', text: '参观莫高窟' }, { name: 'West Lake', text: '西湖' }, { name: 'row a boat', text: '划船' }, { name: 'the Great Wall', text: '长城' }, { name: 'summer vacation', text: '暑假' }, { name: 'travel', text: '长途行走' }, { name: 'reading', text: '阅读' }, { name: 'skateboarding', text: '玩滑板' }, { name: 'singina', text: '辛吉纳' }, { name: 'dancing', text: '跳舞' }, { name: 'doing jigsaw puzzles', text: '做拼图游戏' }, { name: 'making models', text: '制作模型' }, { name: 'collecting erasers', text: '收集橡皮擦' }, { name: 'different', text: '不同的' }, { name: 'hobby', text: '爱好' }, { name: 'stamp', text: '邮票' }, { name: 'catch', text: '接住' }, { name: 'go for a picnic', text: '去野餐' }, { name: 'go skating', text: '去溜冰' }, { name: 'play the violin', text: '拉小提琴' }, { name: 'go camping', text: '去野营' }, { name: 'do the housework', text: '做家务' }, { name: 'free', text: '自由的' }, { name: 'never', text: '从不' }, { name: 'once a week', text: '一周一次' }, { name: 'twice a week', text: '一周两次' }, { name: 'three times a week', text: '一周三次' }, { name: 'the UK', text: '英国' }, { name: 'the USA', text: '美国' }, { name: 'China', text: '中国' }, { name: 'koala', text: '树袋熊' }, { name: 'Canada', text: '加拿大' }, { name: 'Australia', text: '澳大利亚' }, { name: 'maple leaves', text: '枫叶' }, { name: 'Big Ben', text: '大本钟' }, { name: 'Disneyland', text: '迪斯尼乐园' }, { name: 'campfire', text: '营火' }, { name: 'cute', text: '可爱的' }, { name: 'country', text: '国' }, { name: 'pretty', text: '漂亮的' }]
+        // 五年级
+        const fifthGradeS = [{ name: " ", text: ' ' }, { name: "五上💜💜💜", text: '' }, { name: "💜💜💜", text: '💜💜💜' }, { name: "clever", text: "聪明的" }, { name: "careless", text: "不小心的" }, { name: "polite", text: "有礼貌的" }, { name: "quiet", text: "轻声的" }, { name: "cute", text: "可爱的" }, { name: "friendly", text: "友爱的" }, { name: "helpful", text: "有用的" }, { name: "active", text: "忙碌的" }, { name: "popular", text: "受喜爱的" }, { name: "talk", text: "说话" }, { name: "party", text: "聚会" }, { name: "sometimes", text: "有时" }, { name: "bark", text: "树皮" }, { name: "forget", text: "忘记" }, { name: "with", text: "具有" }, { name: "wear glasses", text: "戴上眼镜" }, { name: "slim", text: "苗条的" }, { name: "curly", text: "卷曲的" }, { name: "straight", text: "直的" }, { name: "nice", text: "美好的" }, { name: "young", text: "幼小的" }, { name: "teach", text: "教" }, { name: "guess", text: "猜测" }, { name: "has", text: "有" }, { name: "elephant", text: "大象" }, { name: "Panda", text: "熊猫" }, { name: "horse", text: "马" }, { name: "cow", text: "母牛" }, { name: "pig", text: "猪" }, { name: "sheep", text: "羊" }, { name: "bee", text: "蜜蜂" }, { name: "farm", text: "农场" }, { name: "fast", text: "快速的" }, { name: "why", text: "为什么？" }, { name: "lovely", text: "美丽的" }, { name: "butterfly", text: "蝴蝶" }, { name: "exercise book", text: "练习本" }, { name: "chore", text: "家务活" }, { name: "pencil sharpener", text: "卷笔刀" }, { name: "a pair of scissors", text: "一把剪刀" }, { name: "pencil box", text: "铅笔盒" }, { name: "a box of crayons", text: "一盒蜡笔" }, { name: "anima", text: "灵魂" }, { name: "please", text: "请" }, { name: "only", text: "只有" }, { name: "also", text: "而且" }, { name: "saleswoman", text: "女售货员" }, { name: "great", text: "太棒了" }, { name: "clean the room", text: "打扫房间" }, { name: "love", text: "爱" }, { name: "how much", text: "多少钱？" }, { name: "a lot", text: "很多" }, { name: "wonderful", text: "精彩的" }, { name: "cool", text: "凉的" }, { name: "fantastic", text: "好极了" }, { name: "cartoons", text: "卡通片" }, { name: "news shows", text: "新闻节目" }, { name: "nature shows", text: "自然秀" }, { name: "make the bed", text: "整理床铺" }, { name: "take out the rubbish", text: "把垃圾倒出来" }, { name: "wash clothes", text: "洗衣服" }, { name: "tidy the desk", text: "整理桌子" }, { name: "sweep the floor", text: "扫地" }, { name: "call", text: "呼叫" }]
+        const fifthGradeX = [{ name: "五下💜💜💜", text: '' }, { name: "💜💜💜", text: '💜💜💜' },]
+
+        // 六年级
+        const sixthGradeS = []
+        const sixthGradeX = []
+
+        // 初一
+        const seventhGradeS = []
+        const seventhGradeX = []
+
+        // 初二
+        const eighthGradeS = []
+        const eighthGradeX = []
+
+        // 初三
+        const ninthGradeS = []
+        const ninthGradeX = []
+
+        const songs = [...firstGradeS, ...firstGradeX, ...secondGradeS, ...secondGradeX, ...thirdGradeS, ...thirdGradeX, ...fourthGradeS, ...fourthGradeX, ...fifthGradeS];
         function $(selector) {
             return document.querySelector(selector);
         }
