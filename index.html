@@ -81,7 +81,8 @@
     </div>
     <script>
 
-        const songs = [
+        
+        const firstGradeS = [
             { name: "一上❤️❤️❤️", text: '' },
             { name: "❤️❤️❤️", text: '❤️❤️❤️' },
             { name: "black", text: '(adj.)黑色的' },
@@ -136,6 +137,8 @@
             { name: "like", text: '喜欢' },
             { name: "yes", text: '对' },
             { name: "no", text: '不' },
+        ]
+        const firstGradeX = [
             { name: "一下💚💚💚", text: '' },
             { name: "💚💚💚", text: '💚💚💚' },
             { name: "chair", text: '椅子' },
@@ -176,9 +179,66 @@
             { name: "thirsty", text: '渴的' },
             { name: "thanks", text: '谢谢' },
             { name: "shirt", text: '衬衫' },
-
-        ];
-
+        ]
+        const secondGradeS = [
+            { name: "二上💚💚💚", text: '' },
+            { name: "💚💚💚", text: '💚💚💚' },
+            { name: 'father', text: '父亲' },
+            { name: 'mother', text: '母亲' },
+            { name: 'brother', text: '兄弟' },
+            { name: 'sister', text: '姐妹' },
+            { name: 'who', text: '谁' },
+            { name: 'she', text: '她' },
+            { name: 'classmate', text: '同学' },
+            { name: 'friend', text: '朋友' },
+            { name: 'grandmother', text: '祖母' },
+            { name: 'man', text: '成年男子' },
+            { name: 'look', text: '看' },
+            { name: 'his', text: '他的' },
+            { name: 'name', text: '名称' },
+            { name: 'or', text: '或' },
+            { name: 'grandfather', text: '祖父' },
+            { name: 'big', text: '大的' },
+            { name: 'tall', text: '高的' },
+            { name: 'pretty', text: '漂亮的' },
+            { name: 'thin', text: '薄的' },
+            { name: 'girl', text: '女孩' },
+            { name: 'short', text: '短的' },
+            { name: 'handsome', text: '英俊的' },
+            { name: 'new', text: '新' },
+            { name: 'does', text: '做' },
+            { name: 'bookshop', text: '书店' },
+            { name: 'z00', text: 'z00' },
+            { name: 'school', text: '学校' },
+            { name: 'supermarket', text: '超级市场' },
+            { name: 'park', text: '公园' },
+            { name: 'he', text: '他' },
+            { name: 'go', text: '去' },
+            { name: 'to', text: '到' },
+            { name: 'grass', text: '草' },
+            { name: 'tree', text: '树' },
+            { name: 'flower', text: '花' },
+            { name: 'boat', text: '船' },
+            { name: 'lake', text: '湖' },
+            { name: 'hill', text: '山丘' },
+            { name: 'hospital', text: '医院' },
+            { name: 'boy', text: '男孩' },
+            { name: 'woman', text: '成年女子' },
+            { name: 'Christmas', text: '圣诞节' },
+            { name: 'Father Christmas', text: '圣诞老人' },
+            { name: 'Christmas tree', text: '圣诞树' },
+            { name: 'card', text: '卡片' },
+            { name: 'present', text: '目前' },
+            { name: 'New Year', text: '新年' },
+            { name: 'merry', text: '愉快的' },
+            { name: 'too', text: '也' },
+            { name: 'here', text: '在这里' },
+            { name: 'for', text: '对于' },
+            { name: 'thank', text: '感谢' },
+            { name: 'her', text: '她' },
+            { name: 'happy', text: '快乐的' }
+        ]
+        const songs = [...firstGradeS,...firstGradeX,...secondGradeS   ];
         function $(selector) {
             return document.querySelector(selector);
         }
